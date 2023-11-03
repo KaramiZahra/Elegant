@@ -7,13 +7,14 @@
 // colors
 $darkGrey: #333;
 $grey: #808080;
+$white: #f0f0f0;
 
 // general style
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Classic", "Courier New";
+  font-family: "Classic", "Courier New", "sans-serif";
   font-size: 1rem;
 }
 
@@ -88,6 +89,89 @@ $grey: #808080;
     //
   }
 }
+// main
+#main {
+  text-align: center;
+
+  .main-h2 {
+    color: $darkGrey;
+    font-size: 4rem;
+    font-weight: 900;
+    padding-top: 7rem;
+  }
+  .main-p {
+    color: $grey;
+    font-size: 1.4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 8rem;
+  }
+}
+// gallery of the pages
+.pages-gallery {
+  display: grid;
+  grid-template-rows: repeat(3, 27rem) 10rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2rem;
+  padding: 0 2rem;
+  grid-template-areas:
+    "projects projects projects projects about about"
+    "projects projects projects projects honors honors"
+    "press press press contact contact contact"
+    "press press press contact contact contact";
+
+  .projects-page {
+    grid-area: projects;
+  }
+  .about-page {
+    grid-area: about;
+  }
+  .honors-page {
+    grid-area: honors;
+  }
+  .press-page {
+    grid-area: press;
+  }
+  .contact-page {
+    grid-area: contact;
+  }
+
+  .projects-page,
+  .about-page,
+  .honors-page,
+  .press-page,
+  .contact-page {
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.5s;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all ease 0.8s;
+    }
+    p {
+      a {
+        color: $darkGrey;
+        font-weight: 900;
+        font-size: 2.7rem;
+        padding: 0.3rem;
+        background-color: $white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &:hover {
+      filter: brightness(107%);
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
 
 // Responsive
 @media screen and (max-width: 768px) {
@@ -95,3 +179,30 @@ $grey: #808080;
     font-size: 0.7rem;
   }
 }
+@media screen and (max-width: 576px) {
+  .pages-gallery {
+    grid-template-rows: repeat(5, 27rem);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "projects"
+      "about"
+      "honors"
+      "press"
+      "contact";
+  }
+}
+
+// .projects-page {
+//   grid-column: 1 / span 4;
+//   grid-row: 1 / span 2;
+// }
+// .about-page,
+// .honors-page {
+//   grid-column: span 2/ 7;
+//   grid-row: span 1;
+// }
+// .press-page,
+// .contact-page {
+//   grid-column: span 3;
+//   grid-row: 3 / span 2;
+// }
