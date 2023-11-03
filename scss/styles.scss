@@ -119,6 +119,7 @@ $white: #f0f0f0;
     "press press press contact contact contact"
     "press press press contact contact contact";
 
+  // different parts of the gallery
   .projects-page {
     grid-area: projects;
   }
@@ -144,12 +145,14 @@ $white: #f0f0f0;
     overflow: hidden;
     transition: all ease 0.5s;
 
+    // cover images in pages gallery
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: all ease 0.8s;
     }
+    // cover text in pages gallery
     p {
       a {
         color: $darkGrey;
@@ -172,6 +175,67 @@ $white: #f0f0f0;
     }
   }
 }
+// footer
+#footer {
+  text-align: center;
+  margin: 7rem 2rem;
+  h2 {
+    color: $darkGrey;
+    font-size: 3rem;
+  }
+  p {
+    color: $grey;
+    font-size: 1rem;
+  }
+  button {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem 0.3rem;
+    border-radius: 0.3rem;
+    transition: all 0.3s;
+
+    a {
+      border: 1px solid $darkGrey;
+      border-radius: 0.3rem;
+      font-size: 1.2rem;
+      padding: 0.7rem 1.5rem;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      background-color: $grey;
+      a {
+        color: $white;
+        border: 1px solid $white;
+      }
+    }
+  }
+  // links
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      padding: 0.3rem;
+      font-size: 1.1rem;
+
+      &:hover {
+        color: $grey;
+      }
+    }
+  }
+}
+// copyright
+.copyright {
+  text-align: center;
+  border-top: 1px solid $darkGrey;
+  margin: 0 2rem;
+  padding: 0.5rem;
+
+  span {
+    color: $grey;
+  }
+}
 
 // Responsive
 @media screen and (max-width: 768px) {
@@ -191,18 +255,3 @@ $white: #f0f0f0;
       "contact";
   }
 }
-
-// .projects-page {
-//   grid-column: 1 / span 4;
-//   grid-row: 1 / span 2;
-// }
-// .about-page,
-// .honors-page {
-//   grid-column: span 2/ 7;
-//   grid-row: span 1;
-// }
-// .press-page,
-// .contact-page {
-//   grid-column: span 3;
-//   grid-row: 3 / span 2;
-// }

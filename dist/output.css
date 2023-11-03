@@ -652,4 +652,9 @@ video {
   .sm\:grid-rows-\[10rem\] {
     grid-template-rows: 10rem;
   }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
