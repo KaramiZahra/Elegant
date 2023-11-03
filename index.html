@@ -5,13 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elegant Interior</title>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- links -->
     <link rel="stylesheet" href="scss/styles.css">
     <link href="/dist/output.css" rel="stylesheet">
 </head>
 
 <body>
-
+    <!-- header  -->
+    <header id="header">
+        <!-- logo  -->
+        <div class="logo-container">
+            <h1 class="logo mt-8 md:mt-0">ELEGANT</h1>
+        </div>
+        <!-- header content  -->
+        <div class="header-content">
+            <!-- navbar  -->
+            <ul
+                class="navbar flex justify-center items-center mt-32 md:mt-0 md:flex-col md:justify-start md:items-start md:absolute md:top-0 md:bottom-0 md:-left-96 md:w-96 md:h-screen md:z-10 md:bg-gray-300">
+                <li class="md:py-4 md:mt-4"><a class="md:text-2xl" href="#">ABOUT</a></li>
+                <li class="md:py-4"><a class="md:text-2xl" href="#">PROJECTS</a></li>
+                <li class="md:py-4"><a class="md:text-2xl" href="#">HONORS</a></li>
+                <li class="md:py-4"><a class="md:text-2xl" href="#">PRESS</a></li>
+                <li class="md:py-4"><a class="md:text-2xl" href="#">CONTACT</a></li>
+            </ul>
+            <!-- header icon  -->
+            <div class="header-icon hidden md:block">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- header image  -->
+            <div class="header-img"></div>
+        </div>
+    </header>
 
     <!-- js link -->
     <script src="js/styles.js"></script>

@@ -1,10 +1,97 @@
+// font
 @font-face {
-    font-family: 'Classic';
-    src: url(../font/ClassicoBold.woff2);
+  font-family: "Classic";
+  src: url(../font/ClassicoBold.woff2);
 }
+
+// colors
+$darkGrey: #333;
+$grey: #808080;
+
+// general style
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Classic', 'Courier New';
+  font-family: "Classic", "Courier New";
+  font-size: 1rem;
+}
+
+// header
+#header {
+  position: relative;
+  // logo
+  .logo-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    transition: all ease 0.5s;
+
+    .logo {
+      font-size: 7rem;
+      font-weight: 900;
+      padding: 4rem 0;
+      //// margin-top: 2rem;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all ease 0.7s;
+    }
+  }
+  // header content
+  .header-content {
+    // navbar
+    .navbar {
+      //// display: flex;
+      //// justify-content: center;
+      //// align-items: center;
+      //// margin-top: 8rem;
+      margin-bottom: 1rem;
+      transition: all 0.7s;
+
+      li a {
+        padding: 0 2rem;
+        color: $darkGrey;
+
+        &:hover {
+          color: $grey;
+        }
+      }
+    }
+    // header icon
+    .header-icon {
+      i {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 1rem;
+        font-size: 2rem;
+        color: $darkGrey;
+
+        &:hover {
+          color: $grey;
+        }
+      }
+    }
+    // header image
+    .header-img {
+      background-image: url(../img/header-image.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      background-attachment: fixed;
+      height: 100vh;
+      width: 100%;
+    }
+    //
+  }
+}
+
+// Responsive
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 0.7rem;
+  }
 }
