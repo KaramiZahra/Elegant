@@ -167,12 +167,12 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
   padding: 0.8rem 0.3rem;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   transition: all 0.3s;
 }
 #footer button a {
   border: 1px solid #333;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   font-size: 1.2rem;
   padding: 0.7rem 1.5rem;
   transition: all 0.3s;
