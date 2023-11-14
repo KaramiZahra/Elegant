@@ -18,7 +18,6 @@ $white: #f0f0f0;
   font-family: "Classic", "Courier New", "sans-serif";
   font-size: 1rem;
 }
-
 // header
 #header {
   position: relative;
@@ -117,8 +116,8 @@ $white: #f0f0f0;
   grid-template-areas:
     "projects projects projects projects about about"
     "projects projects projects projects honors honors"
-    "press press press contact contact contact"
-    "press press press contact contact contact";
+    "store store store contact contact contact"
+    "store store store contact contact contact";
 
   // different parts of the gallery
   .projects-page {
@@ -130,8 +129,8 @@ $white: #f0f0f0;
   .honors-page {
     grid-area: honors;
   }
-  .press-page {
-    grid-area: press;
+  .store-page {
+    grid-area: store;
   }
   .contact-page {
     grid-area: contact;
@@ -140,7 +139,7 @@ $white: #f0f0f0;
   .projects-page,
   .about-page,
   .honors-page,
-  .press-page,
+  .store-page,
   .contact-page {
     position: relative;
     overflow: hidden;
@@ -155,15 +154,15 @@ $white: #f0f0f0;
     }
     // cover text in pages gallery
     p {
-        color: $darkGrey;
-        font-weight: 900;
-        font-size: 2.7rem;
-        padding: 0.3rem;
-        background-color: $white;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      color: $darkGrey;
+      font-weight: 900;
+      font-size: 2.7rem;
+      padding: 0.3rem;
+      background-color: $white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     &:hover {
@@ -250,7 +249,7 @@ $white: #f0f0f0;
       "projects"
       "about"
       "honors"
-      "press"
+      "store"
       "contact";
   }
 }

@@ -16,15 +16,7 @@
   padding-top: 4rem;
 }
 
-#header {
-  text-align: center;
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-  padding-bottom: 6rem;
-  border-bottom: 1px solid #808080;
-}
-#header .underline {
+.underline {
   display: inline-block;
   height: 0.2rem;
   width: 20%;
@@ -33,12 +25,38 @@
   margin-top: 1rem;
 }
 
+#header {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #808080;
+}
+
 #main {
   text-align: center;
   width: 80%;
   margin: 0 auto;
 }
+#main .honors {
+  border-bottom: 1px solid #808080;
+  padding-bottom: 4rem;
+}
 #main .honors p {
   color: #333;
   margin: 1rem 0;
+}
+#main .press-container {
+  margin: 2rem auto;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  grid-auto-rows: 1fr;
+}
+#main .press-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=honors.css.map */

@@ -23,6 +23,14 @@ $white: #f0f0f0;
   font-size: 2rem;
   padding-top: 4rem;
 }
+.underline {
+  display: inline-block;
+  height: 0.2rem;
+  width: 20%;
+  background-color: $medGrey;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
 // header
 #header {
   text-align: center;
@@ -31,15 +39,6 @@ $white: #f0f0f0;
   margin-bottom: 3rem;
   padding-bottom: 6rem;
   border-bottom: 1px solid $grey;
-
-  .underline {
-    display: inline-block;
-    height: 0.2rem;
-    width: 20%;
-    background-color: $medGrey;
-    margin-bottom: 4rem;
-    margin-top: 1rem;
-  }
 }
 // main
 #main {
@@ -47,10 +46,28 @@ $white: #f0f0f0;
   width: 80%;
   margin: 0 auto;
 
+  // honors
   .honors {
+    border-bottom: 1px solid $grey;
+    padding-bottom: 4rem;
+
     p {
       color: $darkGrey;
       margin: 1rem 0;
+    }
+  }
+  // press container
+  .press-container {
+    margin: 2rem auto;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    grid-auto-rows: 1fr;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }
