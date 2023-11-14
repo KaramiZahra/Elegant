@@ -2,7 +2,7 @@
 let memebersDB = [
   {
     id: 1,
-    name: "Lisa Kudrow",
+    name: "Zahra Karami",
     position: "Founder",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, libero voluptatum itaque impedit, nam fugit mollitia error voluptates laudantium quam odio numquam et neque quisquam culpa amet iusto atque commodi.",
     img: "./img/about:members/member1.jpeg",
