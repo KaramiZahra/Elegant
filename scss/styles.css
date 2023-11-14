@@ -121,11 +121,11 @@
      object-fit: cover;
   transition: all ease 0.8s;
 }
-.pages-gallery .projects-page p a,
-.pages-gallery .about-page p a,
-.pages-gallery .honors-page p a,
-.pages-gallery .press-page p a,
-.pages-gallery .contact-page p a {
+.pages-gallery .projects-page p,
+.pages-gallery .about-page p,
+.pages-gallery .honors-page p,
+.pages-gallery .press-page p,
+.pages-gallery .contact-page p {
   color: #333;
   font-weight: 900;
   font-size: 2.7rem;
