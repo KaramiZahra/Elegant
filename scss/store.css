@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Classic";
+  src: url(../font/ClassicoBold.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Classic", "Courier New", "sans-serif";
+  font-size: 1rem;
+}
+
+#header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#header .title {
+  color: #5f5f5f;
+  font-size: 3rem;
+  padding-top: 4rem;
+}
+#header .underline {
+  display: inline-block;
+  height: 0.2rem;
+  width: 15%;
+  background-color: #5f5f5f;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+
+#main {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+#main .store-container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-auto-rows: 20rem;
+}
+#main .store-container .store-items {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .store-container .store-items h2 {
+  position: absolute;
+  z-index: 1;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  color: #333;
+  border: 1px solid #333;
+}
+#main .store-container .store-items img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all ease 0.7s;
+  position: absolute;
+}
+#main .store-container .store-items .overlay {
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  z-index: 1;
+  transition: all ease 0.9s;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+#main .store-container .store-items:hover img {
+  transform: scale(1.2);
+}
+#main .store-container .store-items:hover .overlay {
+  width: 100%;
+}/*# sourceMappingURL=store.css.map */
